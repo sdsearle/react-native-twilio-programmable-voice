@@ -565,7 +565,8 @@ public class TwilioVoiceModule extends ReactContextBaseJavaModule implements Act
                 break;
 
             case Constants.ACTION_FCM_TOKEN:
-                registerForCallInvites();
+                //Disabling Firebase use case
+                //registerForCallInvites();
                 break;
 
             case Constants.ACTION_ACCEPT:
@@ -687,7 +688,8 @@ public class TwilioVoiceModule extends ReactContextBaseJavaModule implements Act
 
     @ReactMethod  //
     public void unregister(Promise promise) {
-        unregisterForCallInvites();
+        //Disabling Firebase usecase
+        //unregisterForCallInvites();
         promise.resolve(true);
     }
 
